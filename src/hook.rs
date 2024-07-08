@@ -1,21 +1,19 @@
 #![allow(dead_code)]
 
 use std::{error::Error, ffi::c_void, fmt::Debug};
-
 use minhook_sys::*;
-
 
 pub struct MHStatus(MH_STATUS);
 
 impl Error for MHStatus {}
 impl Debug for MHStatus {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{}", self.to_string_friendly())
+        write!(f, "MH_STATUS({})", self.to_string_friendly())
     }
 }
 impl std::fmt::Display for MHStatus {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{}", self.to_string_friendly())
+        write!(f, "MH_STATUS({})", self.to_string_friendly())
     }
 }
 

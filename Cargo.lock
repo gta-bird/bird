@@ -23,6 +23,7 @@ version = "0.1.0"
 dependencies = [
  "bird_math",
  "dllmain-rs",
+ "minhook-sys",
  "winapi",
 ]
 
@@ -32,6 +33,12 @@ version = "0.1.0"
 dependencies = [
  "cgmath",
 ]
+
+[[package]]
+name = "cc"
+version = "1.0.106"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "066fce287b1d4eafef758e89e09d724a24808a9196fe9756b8ca90e86d0719a2"
 
 [[package]]
 name = "cgmath"
@@ -50,6 +57,15 @@ source = "git+https://github.com/zeon256/dllmain-rs#45ea5a84fb0eb18579ce80dd7e0f
 dependencies = [
  "quote",
  "syn",
+]
+
+[[package]]
+name = "minhook-sys"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dd5e3d769f50ac2ec0cbd86ec241d9aa219a080a74c0287ce781f46a8900fa18"
+dependencies = [
+ "cc",
 ]
 
 [[package]]

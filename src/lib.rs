@@ -1,6 +1,8 @@
 use std::thread;
 use winapi::shared::minwindef::{self, HINSTANCE, DWORD, LPVOID, BOOL};
 
+pub(crate) mod hook;
+
 struct ModuleHandle(HINSTANCE);
 unsafe impl Send for ModuleHandle {}
 

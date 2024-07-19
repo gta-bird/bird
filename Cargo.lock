@@ -21,11 +21,16 @@ checksum = "0c4b4d0bd25bd0b74681c0ad21497610ce1b7c91b1022cd21c80c6fbdd9476b0"
 name = "bird"
 version = "0.1.0"
 dependencies = [
+ "bird-memory",
  "bird_math",
  "dllmain-rs",
  "minhook-sys",
  "winapi",
 ]
+
+[[package]]
+name = "bird-memory"
+version = "0.1.0"
 
 [[package]]
 name = "bird_math"
